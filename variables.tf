@@ -18,7 +18,11 @@ variable "environment" {
   type        = string
   description = "(Optional) Environment to use for all resources in this module."
   default     = "development"
+}
 
+variable "billing_code" {
+  type        = string
+  description = "(Required) Billing code to use for network resources."
 }
 
 variable "cidr_block" {
